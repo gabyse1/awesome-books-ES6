@@ -38,7 +38,7 @@ body {
   position: absolute;
   top: 63px;
   right: 0;
-  z-index: 10;
+  z-index: 9;
 }
 
 .navbar__box {
@@ -98,7 +98,7 @@ body {
   position: fixed;
   top: 1.25rem;
   right: 1.5rem;
-  z-index: 12;
+  z-index: 11;
 }
 
 .navbar__menu-button-modal .navbar__menu-bar {
@@ -159,7 +159,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  z-index: 11;
+  z-index: 10;
 }
 
 @keyframes modalFadeIn {

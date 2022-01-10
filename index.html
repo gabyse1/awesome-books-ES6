@@ -1,79 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/index.css" />
-    <script src="scripts/index.js" type="module"></script>
-    <!-- google fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Andika+New+Basic:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-      rel="stylesheet"
-    />
 
-    <title>Awesome Books</title>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/index.css" />
+  <script src="scripts/index.js" type="module"></script>
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Andika+New+Basic:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet" />
 
-  <body>
-    <div class="body-container">
-      <nav class="navbar__box">
-        <a id="brand-link" class="navbar__brand" href="#">Awesome Books</a>
-        <button
-          class="navbar__menu-button"
-          type="button"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar__menu-bar"></span>
-        </button>
-        <div class="navbar__menu-nav">
-          <a id="list-link" class="nav-link active" aria-current="page" href="#"
-            >List</a
-          >
-          <a id="addnew-link" class="nav-link" href="#">Add new</a>
-          <a id="contact-link" class="nav-link" href="#">Contact</a>
-        </div>
-      </nav>
-      <div class="date"></div>
-      <section class="booklist-container section-container">
-        <h1>All Awesome Books</h1>
-        <div class="row books-list"> </div>
-      </section>
-      <section class="addnew-container section-container d-none">
-        <h2>Add a new book</h2>
-        <form action="#" id="books-form" class="m-auto container-sm">
-          <input
-            type="text"
-            placeholder="Book title..."
-            id="book-title"
-            name="title"
-          />
-          <input
-            type="text"
-            placeholder="Book author..."
-            id="book-author"
-            name="author"
-          />
-          <button type="button" class="btn-danger" id="add-button"
-            >Add Book</button
-          >
-        </form>
-      </section>
-      <section class="contact-container section-container d-none">
-        <h2>Contact information</h2>
-        <div class="m-auto container-sm">
-          <p class=""
-            >Do you have any questions or you just want to say "Hello"? <br />
-            You can reach out to us!</p
-          >
-          <p class="mb-0">Our email: mail@mail.com</p>
-          <p class="mb-0">Our phone number: 0043586534422</p>
-          <p class="mb-0">Our address: Streetname 22, 84503 City, Country </p>
-        </div>
-      </section>
-      <footer class="footer__box">© 2022 Copyright...</footer>
-    </div>
-  </body>
+  <title>Awesome Books</title>
+</head>
+
+<body>
+  <div class="body-container">
+    <nav class="navbar__box">
+      <a id="brand-link" class="navbar__brand" href="#">Awesome Books</a>
+      <button class="navbar__menu-button" type="button" aria-label="Toggle navigation">
+        <span class="navbar__menu-bar"></span>
+      </button>
+      <div class="navbar__menu-nav">
+        <a id="list-link" class="nav-link active" aria-current="page" href="#">List</a>
+        <a id="addnew-link" class="nav-link" href="#">Add new</a>
+        <a id="contact-link" class="nav-link" href="#">Contact</a>
+      </div>
+    </nav>
+    <div class="date"></div>
+    <section class="booklist-container section-container">
+      <h1>All Awesome Books</h1>
+      <div class="row books-list"> </div>
+    </section>
+    <section class="addnew-container section-container d-none">
+      <h2>Add a new book</h2>
+      <form action="#" id="books-form" class="m-auto container-sm">
+        <input type="text" placeholder="Book title..." id="book-title" name="title" required />
+        <input type="text" placeholder="Book author..." id="book-author" name="author" required />
+        <button type="button" class="btn-danger" id="add-button">Add Book</button>
+      </form>
+    </section>
+    <section class="contact-container section-container d-none">
+      <h2>Contact information</h2>
+      <div class="m-auto container-sm">
+        <p class="">Do you have any questions or you just want to say "Hello"? <br />
+          You can reach out to us!</p>
+        <p class="mb-0">Our email: mail@mail.com</p>
+        <p class="mb-0">Our phone number: 0043586534422</p>
+        <p class="mb-0">Our address: Streetname 22, 84503 City, Country </p>
+      </div>
+    </section>
+    <footer class="footer__box">© 2022 Copyright...</footer>
+  </div>
+</body>
+
 </html>

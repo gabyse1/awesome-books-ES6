@@ -1,6 +1,27 @@
 import BookList from '../modules/book.js';
 import { DateTime } from '../node_modules/luxon/src/luxon.js';
 
+// Render book list
+const addButton = document.querySelector('#add-button');
+const bookTitle = document.querySelector('#book-title');
+const bookAuthor = document.querySelector('#book-author');
+const bookList = new BookList();
+
+addButton.addEventListener('click', (event) => {
+  event.preventDefault();
+  // validate
+
+  bookList.addBook(bookTitle.value, bookAuthor.value);
+  bookList.renderBooks();
+  bookTitle.value = '';
+  bookAuthor.value = '';
+});
+
+window.addEventListener('load', () => {
+  bookList.loadLocalStorage();
+  bookList.renderBooks();
+});
+
 // Add Date and Time
 const dateToday = document.querySelector('.date');
 const dt = DateTime.now().toLocaleString(DateTime.DATETIME_FULL);
@@ -33,7 +54,6 @@ const menuToogle = () => {
 menuButton.addEventListener('click', menuToogle);
 
 // Simple page app events
-
 const booklist = document.querySelector('.booklist-container');
 const addnew = document.querySelector('.addnew-container');
 const contact = document.querySelector('.contact-container');
@@ -84,23 +104,4 @@ brandLink.addEventListener('click', (e) => {
   listLink.classList.add('active');
   addnewLink.classList.remove('active');
   contactLink.classList.remove('active');
-});
-
-// Render book list
-const addButton = document.querySelector('#add-button');
-const bookTitle = document.querySelector('#book-title');
-const bookAuthor = document.querySelector('#book-author');
-const bookList = new BookList();
-
-addButton.addEventListener('click', (event) => {
-  event.preventDefault();
-  bookList.addBook(bookTitle.value, bookAuthor.value);
-  bookList.renderBooks();
-  bookTitle.value = '';
-  bookAuthor.value = '';
-});
-
-window.addEventListener('load', () => {
-  bookList.loadLocalStorage();
-  bookList.renderBooks();
 });
