@@ -21,7 +21,7 @@
 
 ## Live Demo
 
-[Awesome books](https://gabyse1.github.io/repo-awesome-books/)
+[Awesome books](https://gabyse1.github.io/awesome-books-ES6/)
 
 
 ## Getting Started
@@ -51,9 +51,13 @@ To get a local copy up and running follow these simple example steps.
 - Twitter: [@gabyse0](https://twitter.com/gabyse0)
 - LinkedIn: [Gabriela](https://www.linkedin.com/in/gabriela-s%C3%A1nchez-espirilla-83011b225/)
 
-👤 **Ramoun**
+👤 **Ramoun Omar**
 
 - GitHub: [@MrRamoun](https://github.com/MrRamoun)
+
+👤 **Zeeshan Haider**
+
+- GitHub: [@zhadier](https://github.com/zhadier)
 
 
 ## 🤝 Contributing
