@@ -306,6 +306,26 @@ body {
   align-items: center;
 }
 
+/* CONTACT VALIDATION */
+.form-message {
+  display: none;
+  padding: 0.3rem;
+  margin: 0.5rem 0;
+  color: #027937;
+}
+
+.error-message {
+  color: #900;
+}
+
+.field-error {
+  outline: 1px solid #900;
+}
+
+.visible {
+  display: block;
+}
+
 @media (min-width: 768px) {
   .navbar__menu-button {
     display: none;

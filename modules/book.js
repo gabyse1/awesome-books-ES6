@@ -23,6 +23,11 @@ export default class BookList {
     this.saveLocalStorage();
   };
 
+  hasBook = (bookTitle1) => {
+    if (this.books.find((b) => b.title === bookTitle1)) return true;
+    return false;
+  };
+
   renderBooks = () => {
     const booksList = document.querySelector('.books-list');
     booksList.innerText = '';
