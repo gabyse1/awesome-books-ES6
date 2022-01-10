@@ -1,5 +1,5 @@
 {
-  "name": "repo-awesome-books",
+  "name": "awesome-books-ES6",
   "version": "1.0.0",
   "description": "\"Awesome books\" is a simple website that displays a list of books and allows you to add and remove books from that list.",
   "main": "index.js",
@@ -8,15 +8,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gabyse1/repo-awesome-books.git"
+    "url": "git+https://github.com/gabyse1/awesome-books-ES6.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/gabyse1/repo-awesome-books/issues"
+    "url": "https://github.com/gabyse1/awesome-books-ES6/issues"
   },
-  "homepage": "https://github.com/gabyse1/repo-awesome-books#readme",
+  "homepage": "https://github.com/gabyse1/awesome-books-ES6#readme",
   "devDependencies": {
     "babel-eslint": "^10.1.0",
     "eslint": "^7.32.0",
