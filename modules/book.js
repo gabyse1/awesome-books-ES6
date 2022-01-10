@@ -1,4 +1,4 @@
-class BookList {
+export default class BookList {
   constructor() {
     this.books = [];
   }
@@ -55,21 +55,3 @@ class BookList {
     });
   };
 }
-
-const addButton = document.querySelector('#add-button');
-const bookTitle = document.querySelector('#book-title');
-const bookAuthor = document.querySelector('#book-author');
-const bookList = new BookList();
-
-addButton.addEventListener('click', (event) => {
-  event.preventDefault();
-  bookList.addBook(bookTitle.value, bookAuthor.value);
-  bookList.renderBooks();
-  bookTitle.value = '';
-  bookAuthor.value = '';
-});
-
-window.addEventListener('load', () => {
-  bookList.loadLocalStorage();
-  bookList.renderBooks();
-});

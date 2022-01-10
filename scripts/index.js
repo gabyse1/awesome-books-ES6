@@ -1,3 +1,5 @@
+import BookList from '../modules/book.js';
+
 // Animate menu modal in mobile
 const menuButton = document.querySelector('.navbar__menu-button');
 const menuNav = document.querySelector('.navbar__menu-nav');
@@ -76,4 +78,23 @@ brandLink.addEventListener('click', (e) => {
   listLink.classList.add('active');
   addnewLink.classList.remove('active');
   contactLink.classList.remove('active');
+});
+
+// Render book list
+const addButton = document.querySelector('#add-button');
+const bookTitle = document.querySelector('#book-title');
+const bookAuthor = document.querySelector('#book-author');
+const bookList = new BookList();
+
+addButton.addEventListener('click', (event) => {
+  event.preventDefault();
+  bookList.addBook(bookTitle.value, bookAuthor.value);
+  bookList.renderBooks();
+  bookTitle.value = '';
+  bookAuthor.value = '';
+});
+
+window.addEventListener('load', () => {
+  bookList.loadLocalStorage();
+  bookList.renderBooks();
 });
