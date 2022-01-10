@@ -8,11 +8,11 @@
 body {
   height: 100vh;
   background-color: #f2eee8 !important;
-  background-image: url('../images/background-book.svg');
+  background-image: url("../images/background-book.svg");
   background-position: center;
   background-repeat: repeat;
   background-size: cover;
-  font-family: 'Andika New Basic', sans-serif;
+  font-family: "Andika New Basic", sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.1rem;
@@ -32,6 +32,13 @@ body {
   left: 5%;
   right: 5%;
   bottom: 5%;
+}
+
+.date {
+  position: absolute;
+  top: 63px;
+  right: 0;
+  z-index: 10;
 }
 
 .navbar__box {
@@ -71,7 +78,7 @@ body {
 .navbar__menu-bar::before,
 .navbar__menu-bar::after {
   display: table;
-  content: '';
+  content: "";
   height: 3px;
   width: 100%;
   position: absolute;
@@ -156,13 +163,21 @@ body {
 }
 
 @keyframes modalFadeIn {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @keyframes modalFadeOut {
-  0% { opacity: 1; }
-  100% { opacity: 0; }
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 .section-container {
@@ -184,7 +199,7 @@ body {
 .section-container > h1::after,
 .section-container > h2::after {
   display: table;
-  content: '';
+  content: "";
   height: 1px;
   width: 50px;
   background-color: #fc6868;
@@ -233,7 +248,7 @@ body {
   border: 2px solid #fc6868;
   border-radius: 3px;
   padding: 0.5rem 1rem;
-  font-family: 'Andika New Basic', sans-serif;
+  font-family: "Andika New Basic", sans-serif;
   font-size: 1rem;
   line-height: 1.1rem;
   color: #fc6868;
@@ -264,7 +279,7 @@ body {
   padding: 0.5rem;
   background-color: rgba(255, 255, 255, 0.5);
   border: none;
-  font-family: 'Andika New Basic', sans-serif;
+  font-family: "Andika New Basic", sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.1rem;
